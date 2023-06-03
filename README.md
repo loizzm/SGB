@@ -1,19 +1,6 @@
-## Getting Started
-
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
-"# SGB" 
+O sistema deve dar apoio à gestão de uma biblioteca escolar. Os títulos da biblioteca podem ser livros,
+periódicos e outros. Cada título tem um número de exemplares, um período máximo de empréstimo e
+uma descrição. Um título só pode ser emprestado a leitores cadastrados, que pagarão multas se
+ultrapassarem o período de empréstimo. Professores cadastrados podem pedir que determinados
+títulos, para que sejam consultados apenas na biblioteca durante a oferta de uma disciplina. O produto
+deve permitir o tratamento de perdas e dar apoio ao controle de assinaturas de periódicos.

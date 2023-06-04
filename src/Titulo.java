@@ -1,52 +1,61 @@
-class Titulo{
-    String Descricao;
-    String Nome;
-    int Tempo_de_emprestimo;
-    int ID_livro;
-    int ID_usuario;
-    int tipo_titulo;
-    int Tempo_emprestado;
+public class Titulo{
+    private String Descricao;
+    private String Nome;
+    private int Tempo_de_emprestimo;
+    private int ID_livro;
+    private int ID_usuario;
+    private int tipo_titulo;
+    private int Tempo_emprestado;
 
-    String get_Descricao(){
+    public Titulo(String d, String n, int te, int idl, int idu, int tt, int tee){
+        this.Descricao=d;
+        this.Nome=n;
+        this.Tempo_de_emprestimo=te;
+        this.ID_livro=idl;
+        this.ID_usuario=idu;
+        this.tipo_titulo=tt;
+        this.Tempo_emprestado=tee;
+    }
+    public String get_Descricao(){
         return this.Descricao;
     }
-    String get_Nome(){
+    public String get_Nome(){
         return this.Nome;
     }
-     void set_Descricao(String Nome){
+    public void set_Descricao(String Nome){
         this.Descricao=Nome;
      }
-     void set_Nome(String Nome){
+    public void set_Nome(String Nome){
         this.Nome=Nome;
      }
-     int get_Tempo_Emprestimo(){
+    public int get_Tempo_Emprestimo(){
         return this.Tempo_de_emprestimo;
     }
-    void set_Tempo_Emprestimo(int Tempo){
+    public void set_Tempo_Emprestimo(int Tempo){
         this.Tempo_de_emprestimo=Tempo;
     }
-    int get_ID_livro(){
+    public int get_ID_livro(){
         return this.ID_livro;
     }
-    void set_ID_livro(int id){
+    public void set_ID_livro(int id){
         this.ID_livro=id;
     }
-    int get_ID_Usuario(){
+    public int get_ID_Usuario(){
         return this.ID_usuario;
     }
-    void set_ID_Usuario(int id_usuario){
+    public void set_ID_Usuario(int id_usuario){
         this.ID_usuario=id_usuario;
     }
-    int get_Tipo_titulo(){
+    public int get_Tipo_titulo(){
         return this.tipo_titulo;
     }
-    void set_Tipo_titulo(int tipo){
+    public void set_Tipo_titulo(int tipo){
         this.tipo_titulo=tipo;
     }
-    int get_Tempo_emprestado(){
+    public int get_Tempo_emprestado(){
         return this.Tempo_emprestado;
     }
-    void set_Tempo_emprestado(int tempo){
+    public void set_Tempo_emprestado(int tempo){
         this.Tempo_emprestado=tempo;
     }
     

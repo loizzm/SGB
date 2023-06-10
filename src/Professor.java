@@ -1,16 +1,14 @@
-import biblioteca.Usuario;
 import java.util.ArrayList;
-
 
 class Professor extends Usuario{
   private ArrayList<Integer> livros_associados;
   
-  public Professor(ArrayList<int> livros_associados, int id, String nome, String cpf, String endereco, ArrayList<Integer> id_livros_emprestados){
+  public Professor(ArrayList<Integer> livros_associados, int id, String nome, String cpf, String endereco, ArrayList<Integer> id_livros_emprestados){
       super(id, nome, cpf, endereco, id_livros_emprestados);
       this.livros_associados = livros_associados;
   }
   
-  public ArrayList<int> get_Livros_associados(){
+  public ArrayList<Integer> get_Livros_associados(){
       return this.livros_associados;
   }
   

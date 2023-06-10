@@ -1,22 +1,29 @@
 public class Multa {
     private Titulo titulo;
-    //private Usuario user;
+    private Usuario usuario;
     private double valor;
 
-    public Multa(Titulo t, double v){
+    public Multa(Titulo t, Usuario user,double v){
         this.titulo=t;
+        this.usuario=user;
         this.valor=v;
     }
-    public Titulo get_titulo(){
+    public Titulo getTitulo(){
         return this.titulo;
     }
-    public void set_titulo(Titulo t){
+    public void setTitulo(Titulo t){
         this.titulo=t;
     }
-    public double get_valor(){
+    public Usuario getUsuario(){
+        return this.usuario;
+    }
+    public void setUsuario(Usuario user){
+        this.usuario=user;
+    }
+    public double getValor(){
         return this.valor;
     }
-    public void set_valor(double v){
+    public void setValor(double v){
         this.valor=v;
     }
 

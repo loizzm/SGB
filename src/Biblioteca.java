@@ -26,9 +26,18 @@ public class Biblioteca {
         this.usuarios.add(professor);
         return professor;
     }
-    public Titulo cadastrarTitulo(String d, String n, int te, int idl){
+    public void adicionarMap(String nome, int qtd){
+        if(this.exemplares.containsKey(nome) == true){
+            this.exemplares.put(nome,this.exemplares.get(nome)+qtd);
+        }
+        else{
+            this.exemplares.put(nome, qtd);
+        }
+    }
+    public Titulo cadastrarTitulo(String d, String n, int te, int idl,int qtd){
         Titulo titulo = new Titulo(d, n, te, idl);
         this.titulos.add(titulo);
+        this.adicionarMap(n, qtd);
         return titulo;
     }
     
@@ -53,5 +62,9 @@ public class Biblioteca {
             single_instance = new Biblioteca();
 
         return single_instance;
+    }
+
+    public void alterarEstoque(String nome, int qtd){
+        this.exemplares.put(nome,this.exemplares.get(nome) + qtd);
     }
     }

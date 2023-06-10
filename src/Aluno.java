@@ -1,12 +1,10 @@
-import biblioteca.Usuario;
 import java.util.ArrayList;
-
 
 public class Aluno extends Usuario{
   private String nome_curso;
-  private String periodo_curso;
+  private int periodo_curso;
   
-  public Aluno(String nome_curso, String periodo_curso, int id, String nome, String cpf, String endereco, ArrayList<int> id_livros_emprestados){
+  public Aluno(String nome_curso, int periodo_curso, int id, String nome, String cpf, String endereco, ArrayList<Integer> id_livros_emprestados){
       super(id, nome, cpf, endereco, id_livros_emprestados);
       this.nome_curso = nome_curso;
       this.periodo_curso = periodo_curso;

@@ -1,23 +1,28 @@
 public class Titulo{
     private String Descricao;
     private String Nome;
-    private int Tempo_de_emprestimo;
-    private int ID_livro;
-    private int Tempo_emprestado;
+    private int TempoDeEmprestimo;
+    private int idLivro;
+    private int TempoEmprestado;
     private boolean emprestado;
+    private boolean disponivel;
 
     public Titulo(String d, String n, int te, int idl){
         this.Descricao=d;
         this.Nome=n;
-        this.Tempo_de_emprestimo=te;
-        this.ID_livro=idl;
-        this.emprestado =false;
+        this.TempoDeEmprestimo=te;
+        this.idLivro=idl;
+        this.emprestado = false;
+        this.disponivel = false;
     }
     public String getDescricao(){
         return this.Descricao;
     }
     public boolean getEmprestado(){
         return this.emprestado;
+    }
+    public boolean getDisponivel(){
+        return this.disponivel;
     }
     public String getNome(){
         return this.Nome;
@@ -33,27 +38,35 @@ public class Titulo{
             this.emprestado=false;
         }
      }
+     public void setDisponivel(){
+        if (this.disponivel==false){
+            this.disponivel=true;
+        }
+        else{
+            this.disponivel=false;
+        }
+     }
     public void setNome(String Nome){
         this.Nome=Nome;
      }
     public int getTempoEmprestimo(){
-        return this.Tempo_de_emprestimo;
+        return this.TempoDeEmprestimo;
     }
     public void setTempoEmprestimo(int Tempo){
-        this.Tempo_de_emprestimo=Tempo;
+        this.TempoDeEmprestimo=Tempo;
     }
     public int getIDlivro(){
-        return this.ID_livro;
+        return this.idLivro;
     }
     public void setIDlivro(int id){
-        this.ID_livro=id;
+        this.idLivro=id;
     }
     
     public int getTempoemprestado(){
-        return this.Tempo_emprestado;
+        return this.TempoEmprestado;
     }
     public void setTempoEmprestado(int tempo){
-        this.Tempo_emprestado=tempo;
+        this.TempoEmprestado=tempo;
     }
     
     

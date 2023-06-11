@@ -1,29 +1,28 @@
+import java.util.List;
 import java.util.ArrayList;
 
 class Professor extends Usuario{
-  private ArrayList<Integer> livrosAssociados;
+  private List<Titulo> livrosAssociados = new ArrayList<>();
   
   public Professor(int id, String nome, String cpf, String endereco){
       super(id, nome, cpf, endereco);
   }
   
-  public ArrayList<Integer> get_Livros_associados(){
+  public List<Titulo> getLivrosAssociados(){
       return this.livrosAssociados;
   }
   
-  public void set_Livros_associados(ArrayList<Integer> livros_associados){
+  public void setLivrosAssociados(List<Titulo> livros_associados){
       this.livrosAssociados = livros_associados;
   }
   
-  public void associa_livro(int id_livro){
-      this.livrosAssociados.add(id_livro);
+  public void associaLivro(Titulo livro){
+      this.livrosAssociados.add(livro);
+      livro.setDisponivel();
   }
   
-  public void desassocia_livro(int id_livro){
-      this.livrosAssociados.remove(id_livro);
-  }
-  
-  public void solicita_disponibilidade_titulo(int id_livro, int tempo_estimado){
-      // Implementar
+  public void desassociaLivro(Titulo livro){
+      this.livrosAssociados.remove(livro);
+      livro.setDisponivel();
   }
 }

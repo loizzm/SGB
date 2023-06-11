@@ -1,3 +1,4 @@
+package src;
 public class Aluno extends Usuario{
   private String nomeCurso;
   private int periodoCurso;

@@ -1,3 +1,5 @@
+package src;
+
 public class Multa {
     private Titulo titulo;
     private Usuario usuario;

@@ -1,3 +1,5 @@
+package src;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.List;
@@ -51,10 +53,13 @@ public class Biblioteca {
            if (item.verficarTempo() == true){
                 this.gerarMulta(item,item.getTituloEmprestado(),15.30);
            }
+        }   
     }
-}
     public List<Multa> getListMultas(){
         return this.multas;
+    }
+    public List<Usuario> getListUsuarios(){
+        return this.usuarios;
     }
     public static synchronized Biblioteca getInstance()
     {
@@ -67,4 +72,4 @@ public class Biblioteca {
     public void alterarEstoque(String nome, int qtd){
         this.exemplares.put(nome,this.exemplares.get(nome) + qtd);
     }
-    }
+}
